@@ -5,7 +5,7 @@
 
 ## To run arc-cache
 ```bash
-cmake -S . -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build --target arc-cache
 ./build/arc-cache
 ```
 
