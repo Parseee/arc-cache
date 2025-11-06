@@ -1,12 +1,11 @@
 #pragma once
 
 #include <cstddef>
-#include <iostream>
 #include <list>
 #include <unordered_map>
 
 namespace caches {
-template <typename KeyT, typename T> class Cache {
+template <typename KeyT, typename T> class Cache final {
   public:
     Cache(size_t capacity = DEFAULT_CAPACITY) noexcept : capacity(capacity) {}
 

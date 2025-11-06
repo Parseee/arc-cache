@@ -7,7 +7,7 @@
 #include <vector>
 
 namespace caches {
-template <typename T> class BeladyCache {
+template <typename T> class BeladyCache final {
     using iterator_t = std::vector<T>::const_iterator;
 
   public:
