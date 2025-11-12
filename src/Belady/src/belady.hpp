@@ -8,7 +8,7 @@
 
 namespace caches {
 template <typename T> class BeladyCache final {
-    using iterator_t = std::vector<T>::const_iterator;
+    using iterator_t = typename std::vector<T>::const_iterator;
 
   public:
     explicit BeladyCache<T>(size_t cache_size)
